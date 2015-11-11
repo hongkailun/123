@@ -1,0 +1,31 @@
+<html>
+<body><form method = "post" action = "./?ISBN={{book.ISBN}}">
+{% csrf_token %}
+<p>&nbsp;</p>
+
+<table border = 2 align = "center">
+    <tr>
+    <td><center>ISBN</center></td>
+    <td><center>Title</center></td>
+    <td><center>AuthorID</center></td>
+    <td><center>Publisher</center></td>
+    <td><center>PublishDate</center></td>
+    <td><center>Price</center></td>
+    <td><center>操作</center></td>
+    </tr>
+    <tr>
+	<td><center><input name = "ISBN" type = "text" value = {{book.ISBN}} ></center></td>
+	<td><center><input name = "Title" type = "text" value = {{book.Title}}></center></td>
+	<td><center><input name = "AuthorID" type = "text" value = {{book.AuthourID}}></center></td>
+    <td><center><input name = "Publisher" type = "text" value = {{book.Publisher}}></center></td>
+    <td><center><input name = "PublishDate" type = "text" value = {{book.PublishDate}}></center></td>
+    <td><center><input name = "Price" type = "text" value = {{book.Price}}></center></td>
+    <td><center><input type = "submit" value = "Save"><input type = "reset" value = "Reset"></center></td>
+  </tr> 
+</table>
+<p>&nbsp;</p>
+</form>
+<p>&nbsp;</p>
+<center><button><a href = "../show/"> Back </a></button></center>
+</body>
+</html>

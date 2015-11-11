@@ -1,0 +1,25 @@
+<html>
+<body><form method = "post" action = "./?AuthorID={{author.AuthorID}}">
+{% csrf_token %}
+<table border = 2 align = "center">
+    <tr>
+    <td><center>AuthorID</center></td>
+    <td><center>Author</center></td>
+    <td><center>Age</center></td>
+    <td><center>Country</center></td>
+    <td><center>操作</center></td>
+    </tr>
+    <tr>
+	<td><center><input name = "AuthorID" type = "text" value = {{author.AuthorID}}></center></td>
+	<td><center><input name = "Name" type = "text" value = {{author.Author}}></center></td>
+	<td><center><input name = "Age" type = "text" value = {{author.Age}}></center></td>
+   <td><center><input name = "Country" type = "text" value = {{author.Country}}></center></td>
+   <td><center><input type = "submit" value = "Save"><input type = "reset" value = "Reset"></td>
+  </tr> 
+</table>
+<p>&nbsp;</p>
+</form>
+<p>&nbsp;</p>
+<center><button><a href = "../show/"> Back </a></button></center>
+</body>
+</html>

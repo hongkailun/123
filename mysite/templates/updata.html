@@ -1,0 +1,45 @@
+<html>
+
+<body><form method = "post" action = "./?ISBN={{book.ISBN}}">
+{% csrf_token %}
+<table border = 2 align = "center">
+  <tr>
+        <th><center>Author</center></th>
+        <th><center>Age</center></center></th>
+        <th><center>Country</center></th>     
+
+  </tr>
+
+	<tr>
+	 <td><center><input name = "Name" type = "text" value = {{author.Name}}></center></td>
+	 <td><center><input name = "Age" type = "text" value = {{author.Age}}></center></td>
+    <td><center><input name = "Country" type = "text" value = {{author.Country}}></center></td>
+	</tr>
+</table>
+ </h></h1></center></p>
+<table border = 2 align = "center">
+  <tr>
+        <th><center>ISBN</center></th>
+        <th><center>Title</center></center></th>        
+        <th><center>Publisher</center></th>
+        <th><center>PublishDate</center></th>
+        <th><center>price</center></center></th>
+        
+
+  </tr>
+
+	<tr>
+    <td><center><input name = "ISBN" type = "text" value = {{book.ISBN}}></center></td>
+	 <td><center><input name = "Title" type = "text" value = {{book.Title}}></center></td>
+    <td><center><input name = "Publisher" type = "text" value = {{book.Publisher}}></center></td>
+    <td><center><input name = "PublishDate" type = "text" value = {{book.PublishDate}}></center></td>
+    <td><center><input name = "Price" type = "text" value = {{book.Price}}></center></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center><input type = "submit" value = "Save"></center>
+<center><button><a href = "../show/"> back </a></button></center>
+<p>&nbsp;</p>
+</body>
+</html>

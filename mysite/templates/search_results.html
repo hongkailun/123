@@ -1,0 +1,33 @@
+
+<html>
+<head>
+<p>&nbsp;</p>
+
+<p><center>You searched for: <strong>{{ query }}</strong></p>
+</head>
+<body>
+<table border = 1 align = "center">
+  <tr>
+        <th><center>ISBN</center></th>
+        <th><center>Title</center></center></th>
+        <th><center>Publisher</center></th>
+        <th><center>PublishDate</center></th>
+        <th><center>Price</center></th>
+  </tr>
+    
+	{% for book in book %}
+
+	<tr>
+        <td>{{ book.ISBN }}</td>
+        <td>{{ book.Title }}</a></td>
+        <td>{{ book.Publisher }}</td>
+        <td>{{ book.PublishDate}}</td>
+        <td>{{ book.Price }}</a></td>
+	</tr>
+
+	{% endfor %}
+</table>
+</body>
+<p>&nbsp;</p>
+<center><button><a href = "../index/"> Back </a></button></center>
+</html>
